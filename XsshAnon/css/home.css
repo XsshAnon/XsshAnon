@@ -9,6 +9,8 @@
     /* 設置字型 */
     font-family: "Poppins";
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    
 }
 
 
