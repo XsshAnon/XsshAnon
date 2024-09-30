@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>匿名版</title>
+    <title>西松匿名版</title>
     <link rel="icon" href="img/xsshlogo.png">
     <link rel="stylesheet" href="css/anon.css">
-
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/back.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
 
-<!--  -->
+<!-- 留言顯示格式 -->
 <!--  -->
 <!-- 
             <div class="message">
                 <div class="message-info">
                     <div class="info">
-                        <img src="1.jpg" width="100" height="100">
-                        <strong>𝚇𝚂𝚂𝙷 𝙰𝙽𝙾𝙽</strong>
+                        <strong>🪨/strong>
                     </div>
-                    <span>    j  /  s       </span>
+                    <span>幾月幾號 幾點幾分</span>
                 </div>
                 <div class="content">
                     comment
@@ -34,8 +35,40 @@
 
 
 <body>
+
+
+    <div class="back">
+        <button>
+            <a href="../home.html">
+                Back
+            </a>
+        </button>
+    </div>
+
+
+
     <div class="messages">
         <h1>西松匿名</h1>
+        <br>
+        <!--  -->
+        <!--  -->
+
+
+
+        <div class="container">
+            <input required type="text" name="text" class="input" id="messageInput">
+            <label class="label">輸入框 但..是擺好看的</label>
+            <button type="button" class="submit-btn" id="submitButton">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div id="messages"></div>
+        <br>
+
+        <!--  -->
+        <!--  -->
+
+
         <div id="messageBoard">
             <!--  -->
             <div class="message">
@@ -44,17 +77,17 @@
                         <img src="img/1.jpg" width="100" height="100">
                         <strong>𝚇𝚂𝚂𝙷 𝙰𝙽𝙾𝙽</strong>
                     </div>
-                    <span>j</span>
+                    <span>2024-8-22/21:30</span>
                 </div>
                 <div class="content">
-                    暫無
+                    只能等會後端的學弟妹們來幫我們了<span class="face">(￣y▽,￣)╭ </span><br>
                 </div>
             </div>
             <!-- -->
         </div>
     </div>
 
-    
+
 
 </body>
 
