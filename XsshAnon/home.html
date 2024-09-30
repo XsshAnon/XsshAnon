@@ -51,7 +51,7 @@
                         <br>
                         涉以上情況，皆不會投稿
                     </p>
-                    <a href="source1.html" id="a" class="ra" title="來源" target="_blank">→</a>
+                    <a href="source/source1.html" id="a" class="ra" title="來源" target="_blank">→</a>
                 </nav>
                 <br>
             </div>
@@ -97,15 +97,35 @@
     <!--  -->
 
     <script>
-        VanillaTilt.init(document.querySelectorAll(".card"), {
+        // 定義桌面版與手機版的配置
+        const desktopTiltConfig = {
             max: 18,
             speed: 400,
             glare: true,
             "max-glare": 0.5,
-            scale: 1.1,     // 卡片的縮放比例
-            gyroscope: false // 陀螺儀
-        });
+            scale: 1.1,
+            gyroscope: false
+        };
+    
+        const mobileTiltConfig = {
+            max: 0,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+            scale: 1.1,
+            gyroscope: false
+        };
+    
+        // 檢測螢幕寬度，並根據裝置選擇適合的配置
+        if (window.innerWidth > 768) {
+            // 桌面版
+            VanillaTilt.init(document.querySelectorAll(".card"), desktopTiltConfig);
+        } else {
+            // 手機版
+            VanillaTilt.init(document.querySelectorAll(".card"), mobileTiltConfig);
+        }
     </script>
+    
 </body>
 
 </html>
